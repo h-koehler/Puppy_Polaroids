@@ -1,0 +1,59 @@
+body {
+    background-color: #D7DAE5;
+    color: #4b5656;
+    font-family: monospace; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+/*  NAV MENU  */
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+ul#horizontal {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #D7DAE5;
+}
+
+ul#horizontal li {
+    display: inline-block;
+    margin: 5px;
+    padding:5px 10px;
+    background-color: #D7DAE5;
+    font-size: 15px;
+}
+
+ul#horizontal li a {
+    text-decoration: none;
+    color: #4b5656;
+}
+
+ul#horizontal a:hover {
+    display: block;
+    color: #788787;
+    text-decoration: none;
+}
+
+/*  BACKGROUND FOR POLAROIDS / TEXT */
+.corkboard {
+    margin: auto;
+    max-width: 567px;
+    padding: 20px 70px;
+    background-color: rgb(217, 212, 206);
+}
+
+/*  AUTHOR TAG  */
+.bottom {
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+}
