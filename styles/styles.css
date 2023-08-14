@@ -1,6 +1,6 @@
 body {
-    background-color: #dbdfed;
-    color: #4b5656;
+    background-color: #cdd7ee;
+    color: #152435;
     font-family: monospace; 
     text-align: center;
 }
@@ -45,9 +45,34 @@ ul#horizontal a:hover {
 /*  BACKGROUND FOR POLAROIDS / TEXT */
 .corkboard {
     margin: auto;
-    max-width: 567px;
-    padding: 20px 70px;
-    background-color: rgb(217, 212, 206);
+    max-width: 600px;
+    padding: 40px 70px;
+    background-color: #d6ccc2;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* IMAGES ("POLAROIDS") */
+a.polaroid {
+    background-color: #edede9;
+    color: #343a40;
+    padding: 7px 10px 30px 10px;
+    margin: 7px;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+a.polaroid:link,
+a.polaroid:visited {
+    text-decoration: none;
+    color: #343a40;
+}
+
+a.polaroid:hover {
+    background-color: #343a40;
+    color: #edede9;
 }
 
 /*  AUTHOR TAG  */
