@@ -22,7 +22,7 @@ h1 {
     background-color: #858fad;
     list-style-type: none;
     display: block;
-    max-width: 780px;
+    max-width: 795px;
     margin: auto;
     padding: 0;
     border-radius: 15px;
@@ -33,6 +33,10 @@ h1 {
     display: inline-block;
     margin: 0;
     font-size: 15px;
+}
+
+a.active {
+    text-decoration: underline !important;
 }
 
 .navBar ul li a {
@@ -48,7 +52,7 @@ h1 {
     display: block;
     background-color: #293356;
     color: #fafbff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /*  BACKGROUND FOR POLAROIDS / TEXT */
@@ -57,20 +61,31 @@ h1 {
     max-width: 700px;
     padding: 40px;
     background-color: #d6ccc2;
+    border: 10px solid #edede9;
     border-radius: 15px;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* IMAGES ("POLAROIDS") */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
 a.polaroid {
     background-color: #edede9;
     color: #343a40;
-    padding: 7px 10px 30px 10px;
+    padding: 10px 13px 10px 13px;
+    box-sizing: border-box;
+    max-width: 176px;
+    max-height: 202px;
     margin: 20px;
     display: inline-block;
     font-size: 15px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in-out;
 }
 
 a.polaroid:link,
@@ -82,6 +97,16 @@ a.polaroid:visited {
 a.polaroid:hover {
     background-color: #343a40;
     color: #edede9;
+    transform: scale(1.1);
+}
+
+.breed {
+    max-width: 150px;
+    display: block;
+    color: #edede9;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 85%;
 }
 
 /*  AUTHOR TAG  */
@@ -131,10 +156,39 @@ th:last-child {
 
 tr:hover {
     background-color: #858fad;
+    transition: all .2s ease-in-out;
 }
 
 tr.header:hover {
     background-color: #343a40;
     color: #edede9;
     border-radius: 15px;
+}
+
+/* CONTACT CARD */
+.contactCard {
+    margin: auto;
+    max-width: 350px;
+    padding: 40px;
+    background-color: #d6ccc2;
+    border: 10px solid #edede9;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.information {
+    text-align: left;
+    margin: auto;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.information a {
+    color: #152435;
+    text-decoration: none;
+}
+
+.information a:hover {
+    color:#858fad;
+    text-decoration: underline;
 }
