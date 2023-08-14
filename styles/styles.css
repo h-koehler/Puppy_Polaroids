@@ -1,19 +1,21 @@
 body {
     background-color: #cdd7ee;
     color: #152435;
-    font-family: monospace; 
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
 h1 {
     font-size: 50px;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 0;
 }
 
 /*  NAV MENU  */
 .navBar {
     margin: auto;
-    
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .navBar ul {
@@ -24,6 +26,7 @@ h1 {
     margin: auto;
     padding: 0;
     border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navBar ul li {
@@ -38,6 +41,7 @@ h1 {
     display: inline-block;
     padding: 10px;
     color: #152435;
+    font-size: 16px;
 }
 
 .navBar ul li a:hover {
@@ -88,5 +92,49 @@ a.polaroid:hover {
     align-items: center;
     height: 100px;
     bottom: 0;
+    color: #858fad;
+}
 
+/* TABLE */
+table {
+    background-color: #edede9;
+    border-collapse: collapse;
+    border-radius: 15px;
+    font-size: 15px;
+    margin: auto;
+    padding: 5px;
+    max-width: 900px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+th {
+    background-color: #343a40;
+    color: #edede9;
+    font-size: 15px;
+    margin: auto;
+    padding: 5px;
+}
+
+th:first-child {
+    border-top-left-radius: 15px;
+}
+
+th:last-child {
+    border-top-right-radius: 15px;
+}
+
+tr:hover {
+    background-color: #858fad;
+}
+
+tr.header:hover {
+    background-color: #343a40;
+    color: #edede9;
+    border-radius: 15px;
 }
