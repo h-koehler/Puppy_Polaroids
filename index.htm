@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap"
         rel="stylesheet">
+    
 </head>
 
 <body>
@@ -23,34 +24,41 @@
     </div>
 
     <div class="corkboard">
-        <a class="polaroid" href=" https://www.akc.org/dog-breeds/labrador-retriever/" target="_blank">
+        <button id="labBtn" class="polaroid" href=" https://www.akc.org/dog-breeds/labrador-retriever/" target="_blank">
             <img src="dog_images/yellow_lab_sq.jpg" alt="Side profile of a yellow lab standing on a boat.">
             <div class="breed">Labrador Retriever</div>
-        </a>
-        <a class="polaroid" href="https://www.akc.org/dog-breeds/bernese-mountain-dog/" target="_blank">
+        </button>
+        <button id="berneseBtn" class="polaroid" href="https://www.akc.org/dog-breeds/bernese-mountain-dog/" target="_blank">
             <img src="dog_images/bernese_mountain_dog_sq.jpg"
                 alt="Photo of a bernese mountain dog sitting in a field of yellow and white flowers.">
             <div class="breed">Bernese Mountain Dog</div>
-        </a>
-        <a class="polaroid" href=" https://www.akc.org/dog-breeds/shiba-inu/" target="_blank">
+        </button>
+        <button id="shibaBtn" class="polaroid" href=" https://www.akc.org/dog-breeds/shiba-inu/" target="_blank">
             <img src="dog_images/shiba_inu_sq.jpg"
                 alt="Photo of two shiba inu looking down at the camera. The angle looks like the dogs are taking a selfie.">
             <div class="breed">Shiba Inu</div>
-        </a>
-        <a class="polaroid" href=" https://www.akc.org/dog-breeds/golden-retriever/" target="_blank">
+        </button>
+        <button id="goldenBtn" class="polaroid" href=" https://www.akc.org/dog-breeds/golden-retriever/" target="_blank">
             <img src="dog_images/golden_retriever_sq.jpg"
                 alt="Photo of a golden retriever sitting on a rock, looking at the camera. Behind him is a hiking trial.">
             <div class="breed">Golden Retriever</div>
-        </a>
-        <a class="polaroid" href=" https://www.akc.org/dog-breeds/finnish-lapphund/" target="_blank">
+        </button>
+        <button id="lapphundBtn" class="polaroid" href=" https://www.akc.org/dog-breeds/finnish-lapphund/" target="_blank">
             <img src="dog_images/finnish_lapphund_sq.jpg"
                 alt="Photo of a brown Finnish Lapphund with tan markings looking at the camera. Behind him are red autumn leaves on the ground..">
             <div class="breed">Finnish Lapphund</div>
-        </a>
-        <a class="polaroid" href="https://www.akc.org/dog-breeds/samoyed/" target="_blank">
+        </button>
+        <button id="samoyedBtn" class="polaroid" href="https://www.akc.org/dog-breeds/samoyed/" target="_blank">
             <img src="dog_images/samoyed_sq.jpg" alt="Photo of samoyed, which is a white fluffy dog, in a lush field.">
             <div class="breed">Samoyed</div>
-        </a>
+        </button>
+    </div>
+
+    <div id="labModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>LABRADOR RETRIEVER</h2>
+        </div>
     </div>
 
     <div class="footer">
@@ -62,5 +70,7 @@
 
 
 </body>
+
+<script src="scripts/scripts.js"></script>
 
 </html>
