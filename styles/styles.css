@@ -10,6 +10,7 @@ h2 {
     font-size: 50px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 0;
+    text-align: center;
 }
 
 /*  NAV MENU  */
@@ -105,12 +106,13 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 5px;
+    display: inline-block;
 }
 
 button.polaroid {
     background-color: #edede9;
     color: #152435;
-    padding: 10px 13px 10px 13px;
+    padding: 10px 13px 0px 13px;
     box-sizing: border-box;
     max-width: 176px;
     max-height: 202px;
@@ -129,13 +131,15 @@ button.polaroid:hover {
     transform: scale(1.1);
 }
 
-.breed {
+button.polaroid .breed {
     max-width: 150px;
-    display: block;
+    display: inline-block;
     color: #edede9;
     text-align: center;
     white-space: nowrap;
-    font-size: 85%;
+    font-size: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 775px) {
@@ -153,7 +157,7 @@ button.polaroid:hover {
     /* covers entire screen */
     display: none;
     position: fixed;
-    padding-top: 100px;
+    padding-top: 50px;
     top: 0;
     left: 0;
     width: 100%;
@@ -166,10 +170,14 @@ button.polaroid:hover {
 .modal-content {
     background-color: #EDEDE9;
     color: #152435;
-    margin: 15% auto;
+    margin: auto;
+    max-width: 75%;
+    max-height: 75%;
+    overflow:scroll;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 7px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
 .close {
