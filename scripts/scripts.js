@@ -1,8 +1,7 @@
 const bkgd = document.getElementById("noMove");
-var modal = document.getElementById("labModal");
-console.log(document.getElementById("labBtn"));
-var btn = document.getElementById("labBtn");
-var span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("labModal");
+let btn = document.getElementById("labBtn");
+let span = document.getElementsByClassName("close")[0];
 
 
 btn.onclick = function () {

@@ -5,12 +5,24 @@ body {
     text-align: center;
 }
 
-h1,
-h2 {
+h1 {
     font-size: 50px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 0;
     text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
 }
 
 /*  NAV MENU  */
@@ -102,7 +114,7 @@ h2 {
 }
 
 /* IMAGES ("POLAROIDS") */
-img {
+button img {
     width: 150px;
     height: 150px;
     border-radius: 5px;
@@ -173,7 +185,7 @@ button.polaroid .breed {
     margin: auto;
     max-width: 75%;
     max-height: 75%;
-    overflow:scroll;
+    overflow: scroll;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 7px 10px rgba(0, 0, 0, 0.3);
