@@ -1,36 +1,29 @@
 const bkgd = document.getElementById("noMove");
-
-
-
-let labModal = document.getElementById("labModal");
-let berneseModal = document.getElementById("berneseModal");
-let shibaModal = document.getElementById("shibaModal");
-let goldenModal = document.getElementById("goldenModal");
-let lapphundModal = document.getElementById("lapphundModal");
-let samoyedModal = document.getElementById("samoyedModal");
-
-let span = document.getElementsByClassName("close")[0];
-let modalArr = [labModal, berneseModal, shibaModal, lapphundModal, samoyedModal];
-
+let spans = document.querySelectorAll(".close");
 let polaroids = document.querySelectorAll('.polaroid');
-let counter = 0;
+let currentModal;
 
-polaroids.forEach(function (polaroid, counter) {
-    polaroid.addEventListener('click', function() {
-    modalArr[counter].style.display = "block";
-    bkgd.style.overflow = "hidden";
-    counter++;
+// Creates functions to open & close the modals. This creation of functions occurs on load.
+polaroids.forEach(function (polaroid) {
+    polaroid.addEventListener('click', function () {
+        let modalId = polaroid.id + "Modal"; // gets the ID of the modal
+        let modal = document.getElementById(modalId); // gets the modal using the id
+        currentModal = modal; // updates the current modal
+        modal.style.display = "block"; // applies changes to foreground & background
+        bkgd.style.overflow = "hidden";
     });
 });
 
-span.forEach() closeModalSpan(modal) {
-    modal.style.display = "none";
-    bkgd.style.overflow = "visible";
-}
-
-function closeModalWindow(event, modal) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+spans.forEach(function (span) {
+    span.addEventListener('click', function () {
+        let modal = this.parentElement.parentElement; // gets the modal by looking at the Grandparent (TM)
+        modal.style.display = "none"; // applies changes to foreground & background
         bkgd.style.overflow = "visible";
+    });
+});
+
+window.onclick = function (event) { // allows user to click outside modal to close it
+    if (event.target == currentModal) {
+        currentModal.style.display = "none";
     }
 }
