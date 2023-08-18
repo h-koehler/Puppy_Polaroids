@@ -5,6 +5,7 @@ body {
     text-align: center;
 }
 
+/* HEADERS */
 h1 {
     font-size: 50px;
     font-family: 'Playfair Display', serif;
@@ -73,7 +74,7 @@ h3 {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 552px) {
+@media screen and (max-width: 552px) { /* NAV BAR RESPONSIVE */
     .navBar ul {
         display: table;
         width: 100%;
@@ -102,7 +103,7 @@ h3 {
     }
 }
 
-/*  BACKGROUND FOR POLAROIDS / TEXT */
+/*  BACKGROUND FOR POLAROIDS & TEXT */
 .corkboard {
     margin: auto;
     max-width: 700px;
@@ -113,7 +114,7 @@ h3 {
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* IMAGES ("POLAROIDS") */
+/* IMAGES (POLAROIDS) */
 button img {
     width: 150px;
     height: 150px;
