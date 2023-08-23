@@ -74,7 +74,9 @@ h3 {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 552px) { /* NAV BAR RESPONSIVE */
+@media screen and (max-width: 552px) {
+
+    /* NAV BAR RESPONSIVE */
     .navBar ul {
         display: table;
         width: 100%;
@@ -107,11 +109,31 @@ h3 {
 .corkboard {
     margin: auto;
     max-width: 700px;
+    display: inline-block;
+    position: relative;
     padding: 40px;
     background-color: #d6ccc2;
     border: 10px solid #edede9;
     border-radius: 15px;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* INFO SIDEBAR */
+.left-sidebar {
+    position:absolute;
+    box-sizing: border-box;
+    visibility: hidden;
+    padding: 10px;
+    top: 60px;
+    left: -50px;
+    width: 300px;
+    height: 202px;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #edede9;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in-out;
 }
 
 /* IMAGES (POLAROIDS) */
@@ -124,6 +146,7 @@ button img {
 
 button.polaroid {
     background-color: #edede9;
+    position: relative;
     color: #152435;
     padding: 10px 13px 0px 13px;
     box-sizing: border-box;
@@ -136,12 +159,18 @@ button.polaroid {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     transition: all .2s ease-in-out;
     border: none;
+    z-index: 100;
 }
 
 button.polaroid:hover {
     background-color: #293356;
     color: #edede9;
     transform: scale(1.1);
+}
+
+button.polaroid:hover+.left-sidebar {
+    visibility: visible;
+    transform: translate(-178px, 0);
 }
 
 button.polaroid .breed {
@@ -189,7 +218,7 @@ button.polaroid .breed {
     overflow: scroll;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 7px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     text-align: left;
 }
 
