@@ -119,7 +119,7 @@ h3 {
 }
 
 /* INFO SIDEBAR */
-.left-sidebar {
+.sidebar {
     position:absolute;
     box-sizing: border-box;
     visibility: hidden;
@@ -159,18 +159,12 @@ button.polaroid {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     transition: all .2s ease-in-out;
     border: none;
-    z-index: 100;
 }
 
 button.polaroid:hover {
     background-color: #293356;
     color: #edede9;
     transform: scale(1.1);
-}
-
-button.polaroid:hover+.left-sidebar {
-    visibility: visible;
-    transform: translate(-178px, 0);
 }
 
 button.polaroid .breed {
