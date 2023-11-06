@@ -160,11 +160,13 @@ button.polaroid {
     border: none;
 }
 
+/*
 button.polaroid:hover {
     background-color: #293356;
     color: #edede9;
     transform: scale(1.1);
 }
+*/
 
 button.polaroid .breed {
     max-width: 150px;
